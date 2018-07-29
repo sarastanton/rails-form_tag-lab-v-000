@@ -1,6 +1,12 @@
 <h3 Enter a new student: </h3>
 <br>
-  
+
 <%= form_tag new_student_path do %>
-  <label> Student first name
+  <label> Student first name: </label>
+  <%= text_field_tag :'student[first_name]' %>
+
+  <label> Student first name: </label>
+  <%= text_field_tag :'student[first_name]' %>
+
+  <%= submit_tag "Save new student" %>>
 <% end %>
